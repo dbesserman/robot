@@ -2,7 +2,7 @@ defmodule RobotClient do
   def start(file_name) do
     PositionServer.start
 
-    file_name
+    "data/#{file_name}"
     |> File.read!()
     |> String.trim()
     |> String.split("\n")
